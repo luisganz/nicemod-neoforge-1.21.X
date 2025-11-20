@@ -1,4 +1,4 @@
-package de.redstoner_zockt.nicemod;
+package de.redstoner_zockt.minecrafti;
 
 import java.util.List;
 
