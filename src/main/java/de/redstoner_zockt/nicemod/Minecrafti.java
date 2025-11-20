@@ -1,5 +1,7 @@
 package de.redstoner_zockt.nicemod;
 
+import de.redstoner_zockt.nicemod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -19,17 +21,20 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(NiceMod.MOD_ID)
-public class NiceMod {
-    public static final String MOD_ID = "nicemod";
+@Mod(Minecrafti.MOD_ID)
+public class Minecrafti {
+    public static final String MOD_ID = "minecrafti";
     public static final Logger LOGGER = LogUtils.getLogger();
 
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public NiceMod(IEventBus modEventBus, ModContainer modContainer) {
+    public Minecrafti(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -40,6 +45,10 @@ public class NiceMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            //example
+            //event.accept(ModItems.(NAME);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -49,7 +58,7 @@ public class NiceMod {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = NiceMod.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = Minecrafti.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
