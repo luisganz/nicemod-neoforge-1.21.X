@@ -1,4 +1,6 @@
 {
   //example
-  //"item.minecrafti.druks": "Druks"
+  //"item.minecrafti.(name)": "(human redeble name)"
+
+  //"block.minecrafti.(name)": "(human redeble name)"
 }

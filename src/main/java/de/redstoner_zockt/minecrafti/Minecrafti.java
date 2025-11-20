@@ -1,6 +1,7 @@
-package de.redstoner_zockt.nicemod;
+package de.redstoner_zockt.minecrafti;
 
-import de.redstoner_zockt.nicemod.item.ModItems;
+import de.redstoner_zockt.minecrafti.block.ModBlocks;
+import de.redstoner_zockt.minecrafti.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -34,6 +35,7 @@ public class Minecrafti {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -48,6 +50,10 @@ public class Minecrafti {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             //example
             //event.accept(ModItems.(NAME);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            //example
+            //event.accept(ModBlocks.BLOCKY);
         }
     }
 
