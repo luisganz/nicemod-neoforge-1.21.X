@@ -1,6 +1,7 @@
 package de.redstoner_zockt.minecrafti;
 
 import de.redstoner_zockt.minecrafti.block.ModBlocks;
+import de.redstoner_zockt.minecrafti.item.ModCreativeModeTabs;
 import de.redstoner_zockt.minecrafti.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -33,6 +34,8 @@ public class Minecrafti {
     public Minecrafti(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

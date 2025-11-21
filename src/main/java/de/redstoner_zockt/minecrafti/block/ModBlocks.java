@@ -22,6 +22,21 @@ public class ModBlocks {
     //    () -> new Block(BlockBehaviour.Properties.of()
     //            .strength(strength)f.requiresCorrectToolForDrops().sound(SoundType.(SOUNDTYPE))));
 
+
+
+
+
+
+    public static final DeferredBlock<Block> TABLE = registerBlock("table",
+    () -> new Block(BlockBehaviour.Properties.of()
+            .noOcclusion()));
+
+
+
+
+
+
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -1,7 +1,9 @@
 package de.redstoner_zockt.minecrafti.item;
 
 import de.redstoner_zockt.minecrafti.Minecrafti;
+import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
