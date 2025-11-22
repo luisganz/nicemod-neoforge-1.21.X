@@ -12,8 +12,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class PlateBlock extends HorizontalDirectionalBlock {
     public static final MapCodec<PlateBlock> CODEC = simpleCodec(PlateBlock::new);
-
-    private static final VoxelShape PLATE_SHAPE = Block.box(2, 0, 2, 14, 2, 14);
+    private static final VoxelShape SHAPE = Block.box(2, 0, 2, 14, 2, 14);
 
     public PlateBlock(BlockBehaviour.Properties properties) {
         super(properties.noOcclusion());
@@ -21,7 +20,7 @@ public class PlateBlock extends HorizontalDirectionalBlock {
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return PLATE_SHAPE;
+        return SHAPE;
     }
 
     @Override
