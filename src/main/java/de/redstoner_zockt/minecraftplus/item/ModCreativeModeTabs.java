@@ -15,12 +15,18 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Minecraftplus.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> DECOSTUF = CREATIVE_MODE_TAB.register("decostuf",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.TABLE.get())).title(Component.translatable("creativetab.minecrafti.decostuf"))
+    public static final Supplier<CreativeModeTab> DECOSTUFPLUS = CREATIVE_MODE_TAB.register("decostufplus",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.TABLE.get())).title(Component.translatable("creativetab.minecraftplus.decostufplus"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(new ItemStack(ModBlocks.TABLE.get()));
                         output.accept(new ItemStack(ModBlocks.PLATE.get()));
                         output.accept(new ItemStack(ModBlocks.CHAIR.get()));
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> TOOLSPLUS = CREATIVE_MODE_TAB.register("toolsplus",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.KNIFE.get())).title(Component.translatable("creativetab.minecraftplus.toolsplus"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(new ItemStack(ModItems.KNIFE.get()));
                     }).build());
 
 
