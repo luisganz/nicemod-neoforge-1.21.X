@@ -11,9 +11,8 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class ChairBlock extends HorizontalDirectionalBlock {
-    public static final MapCodec<ChairBlock> CODEC = simpleCodec(ChairBlock::new);
-    private static final VoxelShape CHAIR_SHAPE = Block.box(0, 0, 0, 16, 16, 16);
-
+    public static final MapCodec<PlateBlock> CODEC = simpleCodec(PlateBlock::new);
+    private static final VoxelShape SHAPE = Block.box(3, 0, 4, 13, 16, 13);
 
     public ChairBlock(BlockBehaviour.Properties properties) {
         super(properties.noOcclusion());
@@ -21,7 +20,7 @@ public class ChairBlock extends HorizontalDirectionalBlock {
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return CHAIR_SHAPE;
+        return SHAPE;
     }
 
     @Override

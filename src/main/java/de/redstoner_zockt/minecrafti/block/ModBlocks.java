@@ -1,6 +1,7 @@
 package de.redstoner_zockt.minecrafti.block;
 
 import de.redstoner_zockt.minecrafti.Minecrafti;
+import de.redstoner_zockt.minecrafti.block.custom.ChairBlock;
 import de.redstoner_zockt.minecrafti.block.custom.PlateBlock;
 import de.redstoner_zockt.minecrafti.block.custom.TableBlock;
 import de.redstoner_zockt.minecrafti.item.ModItems;
@@ -33,7 +34,7 @@ public class ModBlocks {
             .noOcclusion()));
 
     public static final DeferredBlock<Block> CHAIR = registerBlock("chair",
-            () -> new PlateBlock(BlockBehaviour.Properties.of()
+            () -> new ChairBlock(BlockBehaviour.Properties.of()
                     .noOcclusion()));
 
 
