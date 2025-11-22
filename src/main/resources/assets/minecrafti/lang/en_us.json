@@ -2,6 +2,10 @@
   //example
   //"item.minecrafti.(name)": "(human redeble name)"
   "block.minecrafti.table": "Table",
+  "block.minecrafti.plate": "Plate",
+  "block.minecrafti.chair": "Chair",
+
+
   "creativetab.minecrafti.decostuf": "Deco stuf"
 
   //"block.minecrafti.(name)": "(human redeble name)"
