@@ -1,4 +1,4 @@
-package de.redstoner_zockt.minecrafti;
+package de.redstoner_zockt.minecraftplus;
 
 import java.util.List;
 

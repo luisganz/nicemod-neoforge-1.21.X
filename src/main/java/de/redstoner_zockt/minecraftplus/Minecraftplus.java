@@ -1,8 +1,8 @@
-package de.redstoner_zockt.minecrafti;
+package de.redstoner_zockt.minecraftplus;
 
-import de.redstoner_zockt.minecrafti.block.ModBlocks;
-import de.redstoner_zockt.minecrafti.item.ModCreativeModeTabs;
-import de.redstoner_zockt.minecrafti.item.ModItems;
+import de.redstoner_zockt.minecraftplus.block.ModBlocks;
+import de.redstoner_zockt.minecraftplus.item.ModCreativeModeTabs;
+import de.redstoner_zockt.minecraftplus.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -23,15 +23,15 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(Minecrafti.MOD_ID)
-public class Minecrafti {
-    public static final String MOD_ID = "minecrafti";
+@Mod(Minecraftplus.MOD_ID)
+public class Minecraftplus {
+    public static final String MOD_ID = "minecraftplus";
     public static final Logger LOGGER = LogUtils.getLogger();
 
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public Minecrafti(IEventBus modEventBus, ModContainer modContainer) {
+    public Minecraftplus(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
@@ -68,7 +68,7 @@ public class Minecrafti {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = Minecrafti.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = Minecraftplus.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {

@@ -1,4 +1,4 @@
-package de.redstoner_zockt.minecrafti.block.custom;
+package de.redstoner_zockt.minecraftplus.block.custom;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
