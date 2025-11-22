@@ -15,7 +15,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class ChairBlock extends HorizontalDirectionalBlock {
     public static final MapCodec<PlateBlock> CODEC = simpleCodec(PlateBlock::new);
-    private static final VoxelShape SHAPE = Block.box(3, 0, 3, 13, 16, 13);
+    private static final VoxelShape SHAPE = Block.box(3, 0, 3, 13, 8, 13);
 
     public ChairBlock(BlockBehaviour.Properties properties) {
         super(properties.noOcclusion());
