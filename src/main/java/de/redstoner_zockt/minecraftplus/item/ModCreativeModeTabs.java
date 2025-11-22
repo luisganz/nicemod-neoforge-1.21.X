@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(new ItemStack(ModBlocks.TABLE.get()));
                         output.accept(new ItemStack(ModBlocks.PLATE.get()));
+                        output.accept(new ItemStack(ModBlocks.STEAK_PLATE.get()));
                         output.accept(new ItemStack(ModBlocks.CHAIR.get()));
                     }).build());
 
@@ -27,6 +28,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.KNIFE.get())).title(Component.translatable("creativetab.minecraftplus.toolsplus"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(new ItemStack(ModItems.KNIFE.get()));
+                        output.accept(new ItemStack(ModItems.FORK.get()));
                     }).build());
 
 
