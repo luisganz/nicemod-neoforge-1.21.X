@@ -1,0 +1,31 @@
+package de.redstoner_zockt.minecrafti.block.custom;
+
+import com.mojang.serialization.MapCodec;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
+
+public class PlateBlock extends HorizontalDirectionalBlock {
+    public static final MapCodec<PlateBlock> CODEC = simpleCodec(PlateBlock::new);
+
+    private static final VoxelShape PLATE_SHAPE = Block.box(2, 0, 2, 14, 2, 14);
+
+    public PlateBlock(BlockBehaviour.Properties properties) {
+        super(properties.noOcclusion());
+    }
+
+    @Override
+    protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        return PLATE_SHAPE;
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
+    }
+}

@@ -18,9 +18,12 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> DECOSTUF = CREATIVE_MODE_TAB.register("decostuf",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.TABLE.get())).title(Component.translatable("creativetab.minecrafti.decostuf"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.TABLE);
-                    })
-                    .build());
+                        output.accept(new ItemStack(ModBlocks.TABLE.get()));
+                        output.accept(new ItemStack(ModBlocks.PLATE.get()));
+                        output.accept(new ItemStack(ModBlocks.CHAIR.get()));
+                    }).build());
+
+
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);

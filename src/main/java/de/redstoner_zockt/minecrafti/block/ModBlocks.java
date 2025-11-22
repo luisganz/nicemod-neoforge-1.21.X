@@ -1,6 +1,8 @@
 package de.redstoner_zockt.minecrafti.block;
 
 import de.redstoner_zockt.minecrafti.Minecrafti;
+import de.redstoner_zockt.minecrafti.block.custom.PlateBlock;
+import de.redstoner_zockt.minecrafti.block.custom.TableBlock;
 import de.redstoner_zockt.minecrafti.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -22,19 +24,17 @@ public class ModBlocks {
     //    () -> new Block(BlockBehaviour.Properties.of()
     //            .strength(strength)f.requiresCorrectToolForDrops().sound(SoundType.(SOUNDTYPE))));
 
-
-
-
-
-
     public static final DeferredBlock<Block> TABLE = registerBlock("table",
-    () -> new Block(BlockBehaviour.Properties.of()
+    () -> new TableBlock(BlockBehaviour.Properties.of()
             .noOcclusion()));
 
+    public static final DeferredBlock<Block> PLATE = registerBlock("plate",
+    () -> new PlateBlock(BlockBehaviour.Properties.of()
+            .noOcclusion()));
 
-
-
-
+    public static final DeferredBlock<Block> CHAIR = registerBlock("chair",
+            () -> new PlateBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
