@@ -2,6 +2,8 @@ package de.redstoner_zockt.minecraftplus.item;
 
 import de.redstoner_zockt.minecraftplus.Minecraftplus;
 import de.redstoner_zockt.minecraftplus.item.custom.KnifeItem;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -15,10 +17,22 @@ public class ModItems {
     //        () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item>KNIFE = ITEMS.register("knife",
-            () -> new KnifeItem(new Item.Properties().durability(2)));
+            () -> new KnifeItem(new Item.Properties().durability(100)));
 
     public static final DeferredItem<Item>FORK = ITEMS.register("fork",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item>BROTCHEN = ITEMS.register("brotchen",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BROTCHEN)));
+
+    public static final DeferredItem<Item>KASE_BROTCHEN = ITEMS.register("kase_brotchen",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.KASE_BROTCHEN)));
+
+    public static final DeferredItem<Item>KASE = ITEMS.register("kase",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item>WARMES_KASE_BROTCHEN = ITEMS.register("warmes_kase_brotchen",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.WARMES_KASE_BROTCHEN)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

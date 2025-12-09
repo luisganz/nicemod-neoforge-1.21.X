@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 70,
+  "ingredient": {
+    "item": "minecraftplus:kase_brotchen"
+  },
+  "result": {
+    "id": "minecraftplus:warmes_kase_brotchen"
+  }
+}

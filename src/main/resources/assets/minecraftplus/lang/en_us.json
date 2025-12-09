@@ -1,18 +1,19 @@
 {
-  //example
-  //"item.minecrafti.(name)": "(human redeble name)"
   "block.minecraftplus.table": "Table",
-
   "block.minecraftplus.plate": "Plate",
   "block.minecraftplus.steakplate": "Plate with an Steak",
+  "block.minecraftplus.steakplatesliced": "Plate with an Sliced Steak",
 
   "block.minecraftplus.chair": "Chair",
 
   "item.minecraftplus.knife": "Knife",
   "item.minecraftplus.fork": "Fork",
+  "item.minecraftplus.brotchen": "Brötchen",
+  "item.minecraftplus.kase": "Käse",
+  "item.minecraftplus.kase_brotchen": "Käse Brötchen",
+  "item.minecraftplus.warmes_kase_brotchen": "Warmes Käse Brötchen",
 
   "creativetab.minecraftplus.decostufplus": "Decostuf Plus",
-  "creativetab.minecraftplus.toolsplus": "Tools Plus"
-
-  //"block.minecrafti.(name)": "(human redeble name)"
+  "creativetab.minecraftplus.toolsplus": "Tools Plus",
+  "creativetab.minecraftplus.itemsplus": "Items Plus"
 }

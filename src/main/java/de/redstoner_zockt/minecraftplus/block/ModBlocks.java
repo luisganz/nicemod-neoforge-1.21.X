@@ -36,9 +36,13 @@ public class ModBlocks {
     () -> new PlateBlock(BlockBehaviour.Properties.of()
             .noOcclusion()));
 
+    public static final DeferredBlock<Block> STEAK_PLATE_SLICED = registerBlock("steakplatesliced",
+    () -> new PlateBlock(BlockBehaviour.Properties.of()
+            .noOcclusion()));
+
     public static final DeferredBlock<Block> CHAIR = registerBlock("chair",
-            () -> new ChairBlock(BlockBehaviour.Properties.of()
-                    .noOcclusion()));
+    () -> new ChairBlock(BlockBehaviour.Properties.of()
+            .noOcclusion()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

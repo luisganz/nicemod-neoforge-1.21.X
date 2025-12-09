@@ -20,7 +20,6 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(new ItemStack(ModBlocks.TABLE.get()));
                         output.accept(new ItemStack(ModBlocks.PLATE.get()));
-                        output.accept(new ItemStack(ModBlocks.STEAK_PLATE.get()));
                         output.accept(new ItemStack(ModBlocks.CHAIR.get()));
                     }).build());
 
@@ -31,6 +30,14 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModItems.FORK.get()));
                     }).build());
 
+    public static final Supplier<CreativeModeTab> ITEMSPLUS = CREATIVE_MODE_TAB.register("itemsplus",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.KASE_BROTCHEN.get())).title(Component.translatable("creativetab.minecraftplus.itemsplus"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(new ItemStack(ModItems.BROTCHEN.get()));
+                        output.accept(new ItemStack(ModItems.KASE.get()));
+                        output.accept(new ItemStack(ModItems.KASE_BROTCHEN.get()));
+                        output.accept(new ItemStack(ModItems.WARMES_KASE_BROTCHEN.get()));
+                    }).build());
 
 
     public static void register(IEventBus eventBus) {

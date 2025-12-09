@@ -15,7 +15,7 @@ import java.util.Map;
 public class KnifeItem extends Item {
     private static final Map<Block, Block> KNIFE_MAP=
             Map.of(
-                    ModBlocks.PLATE.get(), ModBlocks.STEAK_PLATE.get()
+                    ModBlocks.STEAK_PLATE.get(), ModBlocks.STEAK_PLATE_SLICED.get()
             );
 
     public KnifeItem(Properties properties) {
