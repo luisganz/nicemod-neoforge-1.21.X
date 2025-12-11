@@ -1,0 +1,18 @@
+{
+  "block.minecraftplus.table": "Tisch",
+  "block.minecraftplus.plate": "Teller",
+  "block.minecraftplus.steakplate": "Teller mit ein Steak",
+  "block.minecraftplus.steakplatesliced": "Teller mit ein gescnittenen Steak",
+  "block.minecraftplus.chair": "Stuhl",
+
+  "item.minecraftplus.knife": "Messer",
+  "item.minecraftplus.fork": "Gabel",
+  "item.minecraftplus.brotchen": "Brötchen",
+  "item.minecraftplus.kase": "Käse",
+  "item.minecraftplus.kase_brotchen": "Käse Brötchen",
+  "item.minecraftplus.warmes_kase_brotchen": "Warmes Käse Brötchen",
+
+  "creativetab.minecraftplus.decostufplus": "Decozeug Plus",
+  "creativetab.minecraftplus.toolsplus": "Werkzeuge Plus",
+  "creativetab.minecraftplus.itemsplus": "Items Plus"
+}
