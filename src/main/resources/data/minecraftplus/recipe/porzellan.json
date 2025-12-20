@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 120,
+  "ingredient": {
+    "item": "minecraft:quartz"
+  },
+  "result": {
+    "id": "minecraftplus:porzellan"
+  }
+}

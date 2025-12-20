@@ -1,13 +1,13 @@
 {
-  "block.minecraftplus.table": "Table",
-  "block.minecraftplus.plate": "Plate",
-  "block.minecraftplus.steakplate": "Plate with an Steak",
-  "block.minecraftplus.steakplatesliced": "Plate with an Sliced Steak",
+  "block.minecraftplus.chair": "chair",
+  "block.minecraftplus.table": "table",
+  "block.minecraftplus.plate": "plate",
+  "block.minecraftplus.steakplate": "plate with an Steak",
+  "block.minecraftplus.steakplatesliced": "plate with an Sliced Steak",
 
-  "block.minecraftplus.chair": "Chair",
-
-  "item.minecraftplus.knife": "Knife",
-  "item.minecraftplus.fork": "Fork",
+  "item.minecraftplus.porzellan": "porcelain",
+  "item.minecraftplus.knife": "knife",
+  "item.minecraftplus.fork": "fork",
   "item.minecraftplus.brotchen": "bread roll",
   "item.minecraftplus.kase": "cheese",
   "item.minecraftplus.kase_brotchen": "cheese bread roll",

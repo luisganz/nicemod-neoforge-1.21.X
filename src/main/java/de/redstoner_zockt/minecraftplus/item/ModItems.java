@@ -16,6 +16,9 @@ public class ModItems {
     //public static final DeferredItem<Item> (NAME) = ITEMS.register("(name)",
     //        () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item>PORZELLAN = ITEMS.register("porzellan",
+            () -> new KnifeItem(new Item.Properties()));
+
     public static final DeferredItem<Item>KNIFE = ITEMS.register("knife",
             () -> new KnifeItem(new Item.Properties().durability(100)));
 

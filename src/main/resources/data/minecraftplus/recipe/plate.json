@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "minecraftplus:porzellan"
+    }
+  },
+  "pattern": [
+    "   ",
+    "   ",
+    "PPP"
+  ],
+  "result": {
+    "id": "minecraftplus:plate"
+  }
+}

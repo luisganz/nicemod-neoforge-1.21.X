@@ -28,6 +28,10 @@ public class ModBlocks {
     () -> new TableBlock(BlockBehaviour.Properties.of()
             .noOcclusion()));
 
+    public static final DeferredBlock<Block> CHAIR = registerBlock("chair",
+            () -> new ChairBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()));
+
     public static final DeferredBlock<Block> PLATE = registerBlock("plate",
     () -> new PlateBlock(BlockBehaviour.Properties.of()
             .noOcclusion()));
@@ -39,11 +43,6 @@ public class ModBlocks {
     public static final DeferredBlock<Block> STEAK_PLATE_SLICED = registerBlock("steakplatesliced",
     () -> new PlateBlock(BlockBehaviour.Properties.of()
             .noOcclusion()));
-
-    public static final DeferredBlock<Block> CHAIR = registerBlock("chair",
-    () -> new ChairBlock(BlockBehaviour.Properties.of()
-            .noOcclusion()));
-
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
