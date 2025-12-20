@@ -35,6 +35,8 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.KASE_BROTCHEN.get())).title(Component.translatable("creativetab.minecraftplus.itemsplus"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(new ItemStack(ModItems.PORZELLAN.get()));
+                        output.accept(new ItemStack(ModItems.BLOOD_BOTTLE.get()));
+                        output.accept(new ItemStack(ModItems.BLOOD.get()));
                         output.accept(new ItemStack(ModItems.BROTCHEN.get()));
                         output.accept(new ItemStack(ModItems.KASE.get()));
                         output.accept(new ItemStack(ModItems.KASE_BROTCHEN.get()));

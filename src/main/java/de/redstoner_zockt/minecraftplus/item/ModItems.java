@@ -20,12 +20,18 @@ public class ModItems {
             () -> new KnifeItem(new Item.Properties()));
 
     public static final DeferredItem<Item>DEAMON_KNIFE = ITEMS.register("deamon_knife",
-            () -> new KnifeItem(new Item.Properties().durability(100)));
+            () -> new KnifeItem(new Item.Properties().stacksTo(1)));
 
     public static final DeferredItem<Item>KNIFE = ITEMS.register("knife",
-            () -> new KnifeItem(new Item.Properties().durability(100)));
+            () -> new KnifeItem(new Item.Properties().stacksTo(1)));
 
     public static final DeferredItem<Item>FORK = ITEMS.register("fork",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item>BLOOD_BOTTLE = ITEMS.register("blood_bottle",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BLOOD_BOTTLE)));
+
+    public static final DeferredItem<Item>BLOOD = ITEMS.register("blood",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item>BROTCHEN = ITEMS.register("brotchen",

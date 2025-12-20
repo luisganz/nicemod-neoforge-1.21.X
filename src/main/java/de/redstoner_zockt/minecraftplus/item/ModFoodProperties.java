@@ -4,6 +4,7 @@ import net.minecraft.world.food.FoodProperties;
 
 public class ModFoodProperties {
     public static final FoodProperties BROTCHEN = new FoodProperties.Builder().nutrition(2).build();
-    public static final FoodProperties KASE_BROTCHEN = new FoodProperties.Builder().nutrition(4).build();
-    public static final FoodProperties WARMES_KASE_BROTCHEN = new FoodProperties.Builder().nutrition(6).build();
+    public static final FoodProperties KASE_BROTCHEN = new FoodProperties.Builder().nutrition(5).build();
+    public static final FoodProperties WARMES_KASE_BROTCHEN = new FoodProperties.Builder().nutrition(7).build();
+    public static final FoodProperties BLOOD_BOTTLE = new FoodProperties.Builder().nutrition(4).build();
 }

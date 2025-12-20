@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraftplus:blood"
+    },
+    {
+      "item": "minecraftplus:blood"
+    },
+    {
+      "item": "minecraftplus:blood"
+    },
+    {
+      "item": "minecraftplus:knife"
+    }
+  ],
+  "result": {
+    "id": "minecraftplus:deamon_knife"
+  }
+}

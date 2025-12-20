@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "minecraftplus:item/brotchen"
+    "layer0": "minecraftplus:item/blood_bottle"
   }
 }

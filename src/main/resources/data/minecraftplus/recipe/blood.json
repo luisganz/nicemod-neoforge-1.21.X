@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraftplus:blood_bottle"
+    }
+  ],
+  "result": {
+    "id": "minecraftplus:blood"
+  }
+}
