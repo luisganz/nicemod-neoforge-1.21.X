@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.KNIFE.get())).title(Component.translatable("creativetab.minecraftplus.toolsplus"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(new ItemStack(ModItems.KNIFE.get()));
+                        output.accept(new ItemStack(ModItems.DEAMON_KNIFE.get()));
                         output.accept(new ItemStack(ModItems.FORK.get()));
                     }).build());
 

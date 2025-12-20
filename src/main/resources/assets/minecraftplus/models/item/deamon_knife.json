@@ -1,0 +1,24 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraftplus:item/deamon_knife"
+  },
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [ 0, 90, 0 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ 0, 90, 0 ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [ 0, 90, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 1, 1, 1 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ 0, 90, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 1, 1, 1 ]
+    }
+  }
+}
