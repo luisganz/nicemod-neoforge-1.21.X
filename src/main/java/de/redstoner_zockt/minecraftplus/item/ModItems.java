@@ -31,9 +31,6 @@ public class ModItems {
     public static final DeferredItem<Item>BLOOD_BOTTLE = ITEMS.register("blood_bottle",
             () -> new Item(new Item.Properties().food(ModFoodProperties.BLOOD_BOTTLE)));
 
-    public static final DeferredItem<Item>BLOOD = ITEMS.register("blood",
-            () -> new Item(new Item.Properties()));
-
     public static final DeferredItem<Item>BROTCHEN = ITEMS.register("brotchen",
             () -> new Item(new Item.Properties().food(ModFoodProperties.BROTCHEN)));
 
