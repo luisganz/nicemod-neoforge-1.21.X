@@ -2,9 +2,8 @@ package de.redstoner_zockt.minecraftplus.item;
 
 import de.redstoner_zockt.minecraftplus.Minecraftplus;
 import de.redstoner_zockt.minecraftplus.item.custom.KnifeItem;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -16,8 +15,17 @@ public class ModItems {
     //public static final DeferredItem<Item> (NAME) = ITEMS.register("(name)",
     //        () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item>ALU_HAT = ITEMS.register("alu_hat",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item>ALU_FOIL = ITEMS.register("alu_foil",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item>SMALL_STONE = ITEMS.register("small_stone",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item>PORZELLAN = ITEMS.register("porzellan",
-            () -> new KnifeItem(new Item.Properties()));
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item>DEAMON_KNIFE = ITEMS.register("deamon_knife",
             () -> new KnifeItem(new Item.Properties().stacksTo(1)));

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": {
+      "item": "minecraftplus:alu_foil"
+    }
+  },
+  "pattern": [
+    " A ",
+    "AAA",
+    "A A"
+  ],
+  "result": {
+    "id": "minecraftplus:alu_hat"
+  }
+}

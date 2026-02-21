@@ -29,6 +29,7 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModItems.KNIFE.get()));
                         output.accept(new ItemStack(ModItems.DEAMON_KNIFE.get()));
                         output.accept(new ItemStack(ModItems.FORK.get()));
+                        output.accept(new ItemStack(ModItems.ALU_HAT.get()));
                     }).build());
 
     public static final Supplier<CreativeModeTab> ITEMSPLUS = CREATIVE_MODE_TAB.register("itemsplus",
@@ -36,11 +37,12 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(new ItemStack(ModItems.PORZELLAN.get()));
                         output.accept(new ItemStack(ModItems.BLOOD_BOTTLE.get()));
-                        output.accept(new ItemStack(ModItems.BLOOD.get()));
                         output.accept(new ItemStack(ModItems.BROTCHEN.get()));
                         output.accept(new ItemStack(ModItems.KASE.get()));
                         output.accept(new ItemStack(ModItems.KASE_BROTCHEN.get()));
                         output.accept(new ItemStack(ModItems.WARMES_KASE_BROTCHEN.get()));
+                        output.accept(new ItemStack(ModItems.SMALL_STONE.get()));
+                        output.accept(new ItemStack(ModItems.ALU_FOIL.get()));
                     }).build());
 
 
