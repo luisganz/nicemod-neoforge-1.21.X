@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "minecraftplus:cardboard_role"
+    },
+    "A": {
+      "item": "minecraftplus:alu_foil"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ACA",
+    "AAA"
+  ],
+  "result": {
+    "id": "minecraftplus:alu_on_a_cardboard_role"
+  }
+}
