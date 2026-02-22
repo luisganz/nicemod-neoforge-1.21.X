@@ -16,9 +16,12 @@
   "item.minecraftplus.warmes_kase_brotchen": "warm cheese bread roll",
   "item.minecraftplus.alu_foil": "Aluminium Foil",
   "item.minecraftplus.alu_hat": "Aluminium Hat",
+  "item.minecraftplus.alu_on_a_cardboard_role": "Aluminium on a cardboard role",
+  "item.minecraftplus.cardboard_role": "cardboard role",
   "item.minecraftplus.small_stone": "small stone",
 
   "creativetab.minecraftplus.decostufplus": "Deco Plus",
   "creativetab.minecraftplus.toolsplus": "Tools Plus",
-  "creativetab.minecraftplus.itemsplus": "Items Plus"
+  "creativetab.minecraftplus.itemsplus": "Items Plus",
+  "creativetab.minecraftplus.amorplus": "Amor Plus"
 }
