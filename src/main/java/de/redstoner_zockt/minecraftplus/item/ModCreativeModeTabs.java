@@ -29,7 +29,6 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModItems.KNIFE.get()));
                         output.accept(new ItemStack(ModItems.DEAMON_KNIFE.get()));
                         output.accept(new ItemStack(ModItems.FORK.get()));
-                        output.accept(new ItemStack(ModItems.ALU_HAT.get()));
                     }).build());
 
     public static final Supplier<CreativeModeTab> ITEMSPLUS = CREATIVE_MODE_TAB.register("itemsplus",
@@ -43,6 +42,14 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModItems.WARMES_KASE_BROTCHEN.get()));
                         output.accept(new ItemStack(ModItems.SMALL_STONE.get()));
                         output.accept(new ItemStack(ModItems.ALU_FOIL.get()));
+                        output.accept(new ItemStack(ModItems.ALU_ON_A_CARDBOARD_ROLE.get()));
+                        output.accept(new ItemStack(ModItems.CARDBOARD_ROLE.get()));
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> AMORPLUS = CREATIVE_MODE_TAB.register("amorplus",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALU_HAT.get())).title(Component.translatable("creativetab.minecraftplus.amorplus"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(new ItemStack(ModItems.ALU_HAT.get()));
                     }).build());
 
 

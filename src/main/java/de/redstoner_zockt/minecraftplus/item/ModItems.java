@@ -15,6 +15,12 @@ public class ModItems {
     //public static final DeferredItem<Item> (NAME) = ITEMS.register("(name)",
     //        () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item>CARDBOARD_ROLE = ITEMS.register("cardboard_role",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item>ALU_ON_A_CARDBOARD_ROLE = ITEMS.register("alu_on_a_cardboard_role",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item>ALU_HAT = ITEMS.register("alu_hat",
             () -> new Item(new Item.Properties()));
 
