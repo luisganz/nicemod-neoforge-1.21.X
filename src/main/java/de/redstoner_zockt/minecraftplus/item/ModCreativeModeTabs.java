@@ -42,8 +42,9 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModItems.WARMES_KASE_BROTCHEN.get()));
                         output.accept(new ItemStack(ModItems.SMALL_STONE.get()));
                         output.accept(new ItemStack(ModItems.ALU_FOIL.get()));
-                        output.accept(new ItemStack(ModItems.ALU_ON_A_CARDBOARD_ROLE.get()));
+                        output.accept(new ItemStack(ModItems.CARDBOARD.get()));
                         output.accept(new ItemStack(ModItems.CARDBOARD_ROLE.get()));
+                        output.accept(new ItemStack(ModItems.ALU_ON_A_CARDBOARD_ROLE.get()));
                     }).build());
 
     public static final Supplier<CreativeModeTab> AMORPLUS = CREATIVE_MODE_TAB.register("amorplus",

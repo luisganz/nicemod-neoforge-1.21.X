@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "minecraftplus:cardboard"
+    }
+  },
+  "pattern": [
+    "   ",
+    "CCC",
+    "   "
+  ],
+  "result": {
+    "id": "minecraftplus:cardboard_role"
+  }
+}

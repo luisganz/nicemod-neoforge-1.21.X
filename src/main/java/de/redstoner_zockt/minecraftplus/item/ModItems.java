@@ -15,6 +15,9 @@ public class ModItems {
     //public static final DeferredItem<Item> (NAME) = ITEMS.register("(name)",
     //        () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item>CARDBOARD = ITEMS.register("cardboard",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item>CARDBOARD_ROLE = ITEMS.register("cardboard_role",
             () -> new Item(new Item.Properties()));
 
