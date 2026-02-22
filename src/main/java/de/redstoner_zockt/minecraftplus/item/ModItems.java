@@ -2,8 +2,8 @@ package de.redstoner_zockt.minecraftplus.item;
 
 import de.redstoner_zockt.minecraftplus.Minecraftplus;
 import de.redstoner_zockt.minecraftplus.item.custom.KnifeItem;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -24,8 +24,7 @@ public class ModItems {
     public static final DeferredItem<Item>ALU_ON_A_CARDBOARD_ROLE = ITEMS.register("alu_on_a_cardboard_role",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item>ALU_HAT = ITEMS.register("alu_hat",
-            () -> new Item(new Item.Properties()));
+
 
     public static final DeferredItem<Item>ALU_FOIL = ITEMS.register("alu_foil",
             () -> new Item(new Item.Properties()));
@@ -59,6 +58,10 @@ public class ModItems {
 
     public static final DeferredItem<Item>WARMES_KASE_BROTCHEN = ITEMS.register("warmes_kase_brotchen",
             () -> new Item(new Item.Properties().food(ModFoodProperties.WARMES_KASE_BROTCHEN)));
+
+    public static final DeferredItem<ArmorItem>ALU_HAT = ITEMS.register("alu_hat",
+            () -> new ArmorItem(ModArmorMaterials.ALU_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(7))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
