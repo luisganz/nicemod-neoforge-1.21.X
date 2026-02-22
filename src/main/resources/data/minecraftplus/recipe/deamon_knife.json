@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraftplus:blood"
+      "item": "minecraftplus:blood_bottle"
     },
     {
-      "item": "minecraftplus:blood"
+      "item": "minecraftplus:blood_bottle"
     },
     {
-      "item": "minecraftplus:blood"
+      "item": "minecraftplus:blood_bottle"
     },
     {
       "item": "minecraftplus:knife"
