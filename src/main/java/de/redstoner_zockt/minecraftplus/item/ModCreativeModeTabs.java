@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModBlocks.TABLE.get()));
                         output.accept(new ItemStack(ModBlocks.PLATE.get()));
                         output.accept(new ItemStack(ModBlocks.CHAIR.get()));
+                        output.accept(new ItemStack(ModBlocks.TOILET.get()));
                     }).build());
 
     public static final Supplier<CreativeModeTab> TOOLSPLUS = CREATIVE_MODE_TAB.register("toolsplus",
