@@ -2,9 +2,9 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "minecrafti:block/plate",
+		"0": "minecraftplus:block/porzellan",
 		"1": "minecraftplus:block/steak",
-		"particle": "minecrafti:block/plate"
+		"particle": "minecrafti:block/porzellan"
 	},
 	"elements": [
 		{
