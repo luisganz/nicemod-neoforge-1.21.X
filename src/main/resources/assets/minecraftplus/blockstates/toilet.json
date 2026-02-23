@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "minecraftplus:block/toilet" },
+    "facing=south": { "model": "minecraftplus:block/toilet", "y": 180 },
+    "facing=west":  { "model": "minecraftplus:block/toilet", "y": 270 },
+    "facing=east":  { "model": "minecraftplus:block/toilet", "y": 90 }
+  }
+}

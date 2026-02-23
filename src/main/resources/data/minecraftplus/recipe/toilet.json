@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraftplus:porzellan"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    "P  ",
+    "PWP",
+    "PP "
+  ],
+  "result": {
+    "id": "minecraftplus:toilet"
+  }
+}

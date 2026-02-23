@@ -1,9 +1,7 @@
 package de.redstoner_zockt.minecraftplus.block;
 
 import de.redstoner_zockt.minecraftplus.Minecraftplus;
-import de.redstoner_zockt.minecraftplus.block.custom.ChairBlock;
-import de.redstoner_zockt.minecraftplus.block.custom.PlateBlock;
-import de.redstoner_zockt.minecraftplus.block.custom.TableBlock;
+import de.redstoner_zockt.minecraftplus.block.custom.*;
 import de.redstoner_zockt.minecraftplus.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -32,16 +30,20 @@ public class ModBlocks {
             () -> new ChairBlock(BlockBehaviour.Properties.of()
                     .noOcclusion()));
 
+    public static final DeferredBlock<Block> TOILET = registerBlock("toilet",
+            () -> new ToiletBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()));
+
     public static final DeferredBlock<Block> PLATE = registerBlock("plate",
     () -> new PlateBlock(BlockBehaviour.Properties.of()
             .noOcclusion()));
 
     public static final DeferredBlock<Block> STEAK_PLATE = registerBlock("steakplate",
-    () -> new PlateBlock(BlockBehaviour.Properties.of()
+    () -> new SteakPlateBlock(BlockBehaviour.Properties.of()
             .noOcclusion()));
 
     public static final DeferredBlock<Block> STEAK_PLATE_SLICED = registerBlock("steakplatesliced",
-    () -> new PlateBlock(BlockBehaviour.Properties.of()
+    () -> new SteakPlateSlicedBlock(BlockBehaviour.Properties.of()
             .noOcclusion()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
