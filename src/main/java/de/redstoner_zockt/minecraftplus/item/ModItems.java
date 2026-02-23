@@ -1,8 +1,8 @@
 package de.redstoner_zockt.minecraftplus.item;
 
 import de.redstoner_zockt.minecraftplus.Minecraftplus;
+import de.redstoner_zockt.minecraftplus.item.custom.AluHatItem;
 import de.redstoner_zockt.minecraftplus.item.custom.KnifeItem;
-import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -59,9 +59,8 @@ public class ModItems {
     public static final DeferredItem<Item>WARMES_KASE_BROTCHEN = ITEMS.register("warmes_kase_brotchen",
             () -> new Item(new Item.Properties().food(ModFoodProperties.WARMES_KASE_BROTCHEN)));
 
-    public static final DeferredItem<ArmorItem>ALU_HAT = ITEMS.register("alu_hat",
-            () -> new ArmorItem(ModArmorMaterials.ALU_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(7))));
+    public static final DeferredItem<AluHatItem>ALU_HAT = ITEMS.register("alu_hat",
+            () -> new AluHatItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
