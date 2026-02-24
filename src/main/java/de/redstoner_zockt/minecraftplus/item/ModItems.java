@@ -1,7 +1,7 @@
 package de.redstoner_zockt.minecraftplus.item;
 
 import de.redstoner_zockt.minecraftplus.Minecraftplus;
-import de.redstoner_zockt.minecraftplus.item.custom.AluHatItem;
+import de.redstoner_zockt.minecraftplus.item.custom.HelmetItem;
 import de.redstoner_zockt.minecraftplus.item.custom.KnifeItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -27,6 +27,9 @@ public class ModItems {
 
 
     public static final DeferredItem<Item>ALU_FOIL = ITEMS.register("alu_foil",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item>GOLD_ALU_FOIL = ITEMS.register("gold_alu_foil",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item>SMALL_STONE = ITEMS.register("small_stone",
@@ -59,8 +62,8 @@ public class ModItems {
     public static final DeferredItem<Item>WARMES_KASE_BROTCHEN = ITEMS.register("warmes_kase_brotchen",
             () -> new Item(new Item.Properties().food(ModFoodProperties.WARMES_KASE_BROTCHEN)));
 
-    public static final DeferredItem<AluHatItem>ALU_HAT = ITEMS.register("alu_hat",
-            () -> new AluHatItem(new Item.Properties()));
+    public static final DeferredItem<HelmetItem>ALU_HAT = ITEMS.register("alu_hat",
+            () -> new HelmetItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
