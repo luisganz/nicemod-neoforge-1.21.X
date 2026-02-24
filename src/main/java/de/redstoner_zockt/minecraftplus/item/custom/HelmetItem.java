@@ -4,8 +4,8 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-public class AluHatItem extends Item {
-    public AluHatItem(Properties properties) {
+public class HelmetItem extends Item {
+    public HelmetItem(Properties properties) {
         super(properties);
     }
 

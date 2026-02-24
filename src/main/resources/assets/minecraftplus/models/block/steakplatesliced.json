@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "minecraftplus:block/porzellan",
 		"1": "minecraftplus:block/steak",
-		"particle": "minecrafti:block/porzellan"
+		"particle": "minecraftplus:block/porzellan"
 	},
 	"elements": [
 		{

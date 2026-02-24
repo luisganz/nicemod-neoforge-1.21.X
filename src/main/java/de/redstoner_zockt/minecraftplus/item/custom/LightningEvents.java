@@ -1,4 +1,4 @@
-package com.example.mod.event;
+package de.redstoner_zockt.minecraftplus.item.custom;
 
 import de.redstoner_zockt.minecraftplus.Minecraftplus;
 import de.redstoner_zockt.minecraftplus.item.ModItems;
@@ -19,6 +19,8 @@ public class LightningEvents {
     @SubscribeEvent
     public static void onLightningSpawn(EntityJoinLevelEvent event) {
 
+        final double MAX_DISTANCE_SQR = 80 * 80;
+
         Entity entity = event.getEntity();
 
         if (!(event.getLevel() instanceof ServerLevel level)) return;
@@ -32,13 +34,18 @@ public class LightningEvents {
 
             if (head.getItem() == ModItems.ALU_HAT.get()) {
 
-                lightning.moveTo(
-                        player.getX(),
-                        player.getY(),
-                        player.getZ()
-                );
+                double distance = lightning.distanceToSqr(player);
 
-                break;
+                if (distance <= MAX_DISTANCE_SQR) {
+
+                    lightning.moveTo(
+                            player.getX(),
+                            player.getY(),
+                            player.getZ()
+                    );
+
+                    break;
+                }
             }
         }
     }
