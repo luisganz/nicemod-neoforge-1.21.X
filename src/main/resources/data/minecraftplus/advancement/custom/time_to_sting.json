@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraftplus:fork",
+      "components": {}
+    },
+    "title": "time to sting",
+    "description": "get a fork"
+  },
+  "parent": "minecraftplus:custom/a_place_for_the_food",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "slots": {
+            "container.*": {
+              "items": "minecraftplus:fork"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraftplus:alu_foil"
+    },
+    "title": "aluminium foil",
+    "description": "get aluminium foil",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "minecraftplus:custom/root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "slots": {
+            "container.*": {
+              "items": "minecraftplus:alu_foil"
+            }
+          }
+        }
+      }
+    }
+  }
+}

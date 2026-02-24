@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraftplus:plate"
+    },
+    "title": "a place for the food",
+    "description": "get a plate",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "minecraftplus:custom/root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "slots": {
+            "container.*": {
+              "items": "minecraftplus:plate"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraftplus:alu_hat"
+    },
+    "title": "the ones up there",
+    "description": "wear a aluminium hat",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "minecraftplus:custom/aluminium_foil",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "slots": {
+            "armor.head": {
+              "items": "minecraftplus:alu_hat"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraftplus:knife",
+      "components": {}
+    },
+    "title": "time to cut",
+    "description": "get a knife"
+  },
+  "parent": "minecraftplus:custom/a_place_for_the_food",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "slots": {
+            "container.*": {
+              "items": "minecraftplus:knife"
+            }
+          }
+        }
+      }
+    }
+  }
+}

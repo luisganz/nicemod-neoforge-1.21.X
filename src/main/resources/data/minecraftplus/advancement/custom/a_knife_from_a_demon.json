@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraftplus:deamon_knife"
+    },
+    "title": "a knife from a demon",
+    "description": "get a deamon knife",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "minecraftplus:custom/time_to_cut",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "slots": {
+            "container.*": {
+              "items": "minecraftplus:deamon_knife"
+            }
+          }
+        }
+      }
+    }
+  }
+}
