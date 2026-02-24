@@ -35,6 +35,7 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> ITEMSPLUS = CREATIVE_MODE_TAB.register("itemsplus",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.KASE_BROTCHEN.get())).title(Component.translatable("creativetab.minecraftplus.itemsplus"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(new ItemStack(ModItems.ALU_HAT.get()));
                         output.accept(new ItemStack(ModItems.PORZELLAN.get()));
                         output.accept(new ItemStack(ModItems.BLOOD_BOTTLE.get()));
                         output.accept(new ItemStack(ModItems.BROTCHEN.get()));
@@ -43,17 +44,11 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModItems.WARMES_KASE_BROTCHEN.get()));
                         output.accept(new ItemStack(ModItems.SMALL_STONE.get()));
                         output.accept(new ItemStack(ModItems.ALU_FOIL.get()));
+                        output.accept(new ItemStack(ModItems.GOLD_ALU_FOIL.get()));
                         output.accept(new ItemStack(ModItems.CARDBOARD.get()));
                         output.accept(new ItemStack(ModItems.CARDBOARD_ROLE.get()));
                         output.accept(new ItemStack(ModItems.ALU_ON_A_CARDBOARD_ROLE.get()));
                     }).build());
-
-    public static final Supplier<CreativeModeTab> AMORPLUS = CREATIVE_MODE_TAB.register("amorplus",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALU_HAT.get())).title(Component.translatable("creativetab.minecraftplus.amorplus"))
-                    .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(new ItemStack(ModItems.ALU_HAT.get()));
-                    }).build());
-
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
