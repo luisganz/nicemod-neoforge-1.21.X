@@ -24,8 +24,6 @@ public class ModItems {
     public static final DeferredItem<Item>ALU_ON_A_CARDBOARD_ROLE = ITEMS.register("alu_on_a_cardboard_role",
             () -> new Item(new Item.Properties()));
 
-
-
     public static final DeferredItem<Item>ALU_FOIL = ITEMS.register("alu_foil",
             () -> new Item(new Item.Properties()));
 
@@ -38,7 +36,7 @@ public class ModItems {
     public static final DeferredItem<Item>PORZELLAN = ITEMS.register("porzellan",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item>DEAMON_KNIFE = ITEMS.register("deamon_knife",
+    public static final DeferredItem<Item>DEMON_KNIFE = ITEMS.register("demon_knife",
             () -> new KnifeItem(new Item.Properties().stacksTo(1)));
 
     public static final DeferredItem<Item>KNIFE = ITEMS.register("knife",

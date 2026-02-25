@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "minecraftplus:deamon_knife"
+      "id": "minecraftplus:demon_knife"
     },
     "title": "a knife from a demon",
     "description": "get a deamon knife",
@@ -17,7 +17,7 @@
           "type": "minecraft:player",
           "slots": {
             "container.*": {
-              "items": "minecraftplus:deamon_knife"
+              "items": "minecraftplus:demon_knife"
             }
           }
         }

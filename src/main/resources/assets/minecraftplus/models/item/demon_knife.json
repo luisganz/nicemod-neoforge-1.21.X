@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "minecraftplus:item/deamon_knife"
+    "layer0": "minecraftplus:item/demon_knife"
   },
   "display": {
     "firstperson_righthand": {
