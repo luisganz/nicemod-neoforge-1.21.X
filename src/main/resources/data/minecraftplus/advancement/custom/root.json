@@ -6,7 +6,7 @@
     },
     "title": "advancements plus",
     "description": "advancements for the mc plus mod",
-    "background": "minecraftplus:textures/block/porzellan.png",
+    "background": "minecraftplus:textures/item/alu.png",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false
