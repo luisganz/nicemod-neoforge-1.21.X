@@ -26,8 +26,17 @@ public class ModBlocks {
     () -> new TableBlock(BlockBehaviour.Properties.of()
             .noOcclusion()));
 
+    public static final DeferredBlock<Block> NIGHT_TABLE = registerBlock("night_table",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .noOcclusion()));
+
     public static final DeferredBlock<Block> CHAIR = registerBlock("chair",
             () -> new ChairBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()));
+
+    public static final DeferredBlock<Block> LAMP = registerBlock("lamp",
+            () -> new LampBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .noOcclusion()));
 
     public static final DeferredBlock<Block> TOILET = registerBlock("toilet",

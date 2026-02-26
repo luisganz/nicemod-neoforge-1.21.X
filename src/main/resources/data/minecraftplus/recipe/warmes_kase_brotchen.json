@@ -1,5 +1,6 @@
 {
   "type": "minecraft:smelting",
+  "category": "misc",
   "cookingtime": 200,
   "ingredient": {
     "item": "minecraftplus:kase_brotchen"

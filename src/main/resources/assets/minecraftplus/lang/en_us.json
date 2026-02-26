@@ -1,5 +1,6 @@
 {
   "block.minecraftplus.chair": "chair",
+  "block.minecraftplus.lamp": "lamp",
   "block.minecraftplus.toilet": "toilet",
   "block.minecraftplus.table": "table",
   "block.minecraftplus.plate": "plate",
@@ -20,6 +21,7 @@
   "item.minecraftplus.alu_hat": "aluminium Hat",
   "item.minecraftplus.alu_on_a_cardboard_role": "Aluminium on a cardboard role",
   "item.minecraftplus.cardboard_role": "cardboard role",
+  "item.minecraftplus.small_cardboard_role": "small cardboard role",
   "item.minecraftplus.cardboard": "cardboard",
   "item.minecraftplus.small_stone": "small stone",
 

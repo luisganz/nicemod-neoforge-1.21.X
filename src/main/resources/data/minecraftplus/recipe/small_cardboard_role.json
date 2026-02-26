@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraftplus:cardboard_role"
+    }
+  ],
+  "result": {
+    "count" : 3,
+    "id": "minecraftplus:small_cardboard_role"
+  }
+}

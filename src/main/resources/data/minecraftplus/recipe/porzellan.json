@@ -1,5 +1,6 @@
 {
   "type": "minecraft:smelting",
+  "category": "misc",
   "cookingtime": 120,
   "ingredient": {
     "item": "minecraft:quartz"

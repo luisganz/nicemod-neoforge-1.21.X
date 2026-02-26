@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "minecraftplus:block/lamp_off"
+    },
+    "clicked=true": {
+      "model": "minecraftplus:block/lamp_on"
+    }
+  }
+}

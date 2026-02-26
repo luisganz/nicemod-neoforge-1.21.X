@@ -19,6 +19,8 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.TABLE.get())).title(Component.translatable("creativetab.minecraftplus.decostufplus"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(new ItemStack(ModBlocks.TABLE.get()));
+                        output.accept(new ItemStack(ModBlocks.NIGHT_TABLE.get()));
+                        output.accept(new ItemStack(ModBlocks.LAMP.get()));
                         output.accept(new ItemStack(ModBlocks.PLATE.get()));
                         output.accept(new ItemStack(ModBlocks.CHAIR.get()));
                         output.accept(new ItemStack(ModBlocks.TOILET.get()));
@@ -35,7 +37,6 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> ITEMSPLUS = CREATIVE_MODE_TAB.register("itemsplus",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.KASE_BROTCHEN.get())).title(Component.translatable("creativetab.minecraftplus.itemsplus"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(new ItemStack(ModItems.ALU_HAT.get()));
                         output.accept(new ItemStack(ModItems.PORZELLAN.get()));
                         output.accept(new ItemStack(ModItems.BLOOD_BOTTLE.get()));
                         output.accept(new ItemStack(ModItems.BROTCHEN.get()));
@@ -47,7 +48,9 @@ public class ModCreativeModeTabs {
                         output.accept(new ItemStack(ModItems.GOLD_ALU_FOIL.get()));
                         output.accept(new ItemStack(ModItems.CARDBOARD.get()));
                         output.accept(new ItemStack(ModItems.CARDBOARD_ROLE.get()));
+                        output.accept(new ItemStack(ModItems.SMALL_CARDBOARD_ROLE.get()));
                         output.accept(new ItemStack(ModItems.ALU_ON_A_CARDBOARD_ROLE.get()));
+                        output.accept(new ItemStack(ModItems.ALU_HAT.get()));
                     }).build());
 
     public static void register(IEventBus eventBus) {

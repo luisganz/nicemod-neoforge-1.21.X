@@ -1,5 +1,6 @@
 {
   "block.minecraftplus.table": "Tisch",
+  "block.minecraftplus.lamp": "Lampe",
   "block.minecraftplus.plate": "Teller",
   "block.minecraftplus.steakplate": "Teller mit ein Steak",
   "block.minecraftplus.steakplatesliced": "Teller mit ein gescnittenes Steak",
@@ -20,6 +21,7 @@
   "item.minecraftplus.alu_hat": "Aluminium Hut",
   "item.minecraftplus.alu_on_a_cardboard_role": "Aluminium auf einer pappe rolle",
   "item.minecraftplus.cardboard_role": "pappe rolle",
+  "item.minecraftplus.small_cardboard_role": "kleine pappe rolle",
   "item.minecraftplus.cardboard": "pappe",
   "item.minecraftplus.small_stone": "kleiner Stein",
 
