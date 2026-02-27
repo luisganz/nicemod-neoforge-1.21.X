@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "minecraftplus:block/globus" },
+    "facing=south": { "model": "minecraftplus:block/globus", "y": 180 },
+    "facing=west":  { "model": "minecraftplus:block/globus", "y": 270 },
+    "facing=east":  { "model": "minecraftplus:block/globus", "y": 90 }
+  }
+}

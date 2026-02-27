@@ -27,7 +27,11 @@ public class ModBlocks {
             .noOcclusion()));
 
     public static final DeferredBlock<Block> NIGHT_TABLE = registerBlock("night_table",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new NightTableBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()));
+
+    public static final DeferredBlock<Block> GLOBUS = registerBlock("globus",
+            () -> new GlobusBlock(BlockBehaviour.Properties.of()
                     .noOcclusion()));
 
     public static final DeferredBlock<Block> CHAIR = registerBlock("chair",
