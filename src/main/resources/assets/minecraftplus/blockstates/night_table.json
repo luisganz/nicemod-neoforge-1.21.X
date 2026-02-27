@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "minecraftplus:block/night_table"
-    }
+    "facing=north": { "model": "minecraftplus:block/night_table" },
+    "facing=south": { "model": "minecraftplus:block/night_table", "y": 180 },
+    "facing=west":  { "model": "minecraftplus:block/night_table", "y": 270 },
+    "facing=east":  { "model": "minecraftplus:block/night_table", "y": 90 }
   }
 }
